@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip Kriithik SS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="left-nav">
+                <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png" alt="MakeMyTrip" class="logo">
+            </div>
+            <div class="right-nav">
+                <div class="nav-item">
+                    <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/propertyListing.png" alt="List Property" class="nav-icon">
+                    <div class="nav-text">
+                        <span>List Your Property</span>
+                        <small>Grow your business!</small>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="mybiz">
+                        <span>Introducing myBiz</span>
+                        <small>Business Travel Solution</small>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span>My Trips</span>
+                    <small>Manage your bookings</small>
+                </div>
+                <button class="login-btn">Login or Create Account</button>
+                <select class="language-select">
+                    <option>🇮🇳 IN | ENG</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="search-card">
+            <div class="trip-types">
+                <label class="trip-type">
+                    <input type="radio" name="tripType" checked>
+                    <span>One Way</span>
+                </label>
+                <label class="trip-type">
+                    <input type="radio" name="tripType">
+                    <span>Round Trip</span>
+                </label>
+                <label class="trip-type">
+                    <input type="radio" name="tripType">
+                    <span>Multi City</span>
+                </label>
+                <span class="flight-type">Book International and Domestic Flights</span>
+            </div>
+            <div class="travel-options">
+              <div class="option" id="flights">
+                  <img src="flight-icon.png" alt="Flights" />
+                  <span>Flights</span>
+              </div>
+              <div class="option" id="hotels">
+                  <img src="hotel-icon.png" alt="Hotels" />
+                  <span>Hotels</span>
+              </div>
+              <div class="option" id="homestays">
+                  <img src="homestay-icon.png" alt="Homestays & Villas" />
+                  <span>Homestays & Villas</span>
+              </div>
+              <div class="option" id="holiday-packages">
+                  <img src="holiday-package-icon.png" alt="Holiday Packages" />
+                  <span>Holiday Packages</span>
+              </div>
+              <div class="option" id="trains">
+                  <img src="train-icon.png" alt="Trains" />
+                  <span>Trains</span>
+              </div>
+              <div class="option" id="buses">
+                  <img src="bus-icon.png" alt="Buses" />
+                  <span>Buses</span>
+              </div>
+              <div class="option" id="cabs">
+                  <img src="cab-icon.png" alt="Cabs" />
+                  <span>Cabs</span>
+              </div>
+              <div class="option" id="forex">
+                  <img src="forex-icon.png" alt="Forex Card & Currency" />
+                  <span>Forex Card & Currency</span>
+              </div>
+              <div class="option" id="insurance">
+                  <img src="insurance-icon.png" alt="Travel Insurance" />
+                  <span>Travel Insurance</span>
+              </div>
+          </div>
+          <div class="selected-option">
+              <h2 id="selectedOptionTitle">Flights</h2>
+              <p id="selectedOptionDetails">Select your preferred option from above.</p>
+          </div>
+            <div class="search-form">
+                <div class="form-group from">
+                    <label>From</label>
+                    <div class="city-input">
+                        <h2>Delhi</h2>
+                        <p>DEL, Delhi Airport India</p>
+                    </div>
+                </div>
+                <div class="swap-icon">⇄</div>
+                <div class="form-group to">
+                    <label>To</label>
+                    <div class="city-input">
+                        <h2>Bengaluru</h2>
+                        <p>BLR, Bengaluru International Airport</p>
+                    </div>
+                </div>
+                <div class="form-group departure">
+                    <label>Departure</label>
+                    <div class="date-input">
+                        <h2>27</h2>
+                        <div>
+                            <span>Jan'25</span>
+                            <p>Monday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group return">
+                    <label>Return</label>
+                    <div class="date-input empty">
+                        <p>Tap to add a return date for bigger discounts</p>
+                    </div>
+                </div>
+                <div class="form-group travelers">
+                    <label>Travellers & Class</label>
+                    <div class="traveler-input">
+                        <h2>1</h2>
+                        <div>
+                            <span>Traveller</span>
+                            <p>Economy/Premium Economy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fare-types">
+                <h3>Select a special fare</h3>
+                <div class="fare-options">
+                    <label class="fare-option">
+                        <input type="radio" name="fareType" checked>
+                        <span class="fare-name">Regular</span>
+                        <small>Regular fares</small>
+                    </label>
+                    <label class="fare-option">
+                        <input type="radio" name="fareType">
+                        <span class="fare-name">Student</span>
+                        <small>Extra discounts/baggage</small>
+                    </label>
+                    <label class="fare-option">
+                        <input type="radio" name="fareType">
+                        <span class="fare-name">Senior Citizen</span>
+                        <small>Up to ₹ 600 off</small>
+                    </label>
+                    <label class="fare-option">
+                        <input type="radio" name="fareType">
+                        <span class="fare-name">Armed Forces</span>
+                        <small>Up to ₹ 600 off</small>
+                    </label>
+                    <label class="fare-option">
+                        <input type="radio" name="fareType">
+                        <span class="fare-name">Doctor and Nurses</span>
+                        <small>Up to ₹ 600 off</small>
+                    </label>
+                </div>
+            </div>
+            <button class="search-button">SEARCH</button>
+        </div>
+    </main>
+</body>
+</html>
